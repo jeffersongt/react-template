@@ -1,22 +1,22 @@
+import React, { Component }  from 'react';
 import "../../App.css";
-import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Modal, Button, Form } from "react-bootstrap";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 
-import { User } from "../../helper/types";
-import { login } from "../exports";
+import { UserResponse } from "../../helper/types";
+import { signin } from "../exports";
 
 function ShowLogin() {
   const navigate = useNavigate();
 
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState<boolean>(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [actualEmail, setEmail] = useState("");
-  const [actualPasswd, setPasswd] = useState("");
-  const input_user: User = { email: "", password: "", userId: "" };
+  const [actualEmail, setEmail] = useState<string>("");
+  const [actualPasswd, setPasswd] = useState<string>("");
+  const input_user: UserResponse = { id: "", email: "", password: ""};
 
   return (
     <>
@@ -64,12 +64,12 @@ function ShowLogin() {
             <Button
               variant="primary"
               onClick={async () => {
-                const result = await login(actualEmail, actualPasswd);
+                const result = await signin(actualEmail, actualPasswd);
                 if (result !== "") {
                   handleClose();
                   setEmail("");
                   setPasswd("");
-                  navigate("/profil");
+                  navigate("/WHERE_YOU_DESIRE_WHEN_LOGGED");
                 }
               }}
             >
@@ -78,7 +78,7 @@ function ShowLogin() {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <a style={{ opacity: 0.8 }}>Linkedin Entreprise</a>
+          <a style={{ opacity: 0.8 }}>*Project Name* Entreprise</a>
         </Modal.Footer>
       </Modal>
     </>

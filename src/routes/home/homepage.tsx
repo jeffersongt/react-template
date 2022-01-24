@@ -1,5 +1,5 @@
+import React, { Component, useState }  from 'react';
 import "../../App.css";
-import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import {
   Container,
   OverlayTrigger,
@@ -8,19 +8,21 @@ import {
   FormControl,
   Nav,
   Navbar,
+  Button
 } from "react-bootstrap";
-import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
-import { ShowLogin, ShowSignup, SearchHomepage } from "../exports";
+import { ShowLogin, ShowSignup } from "../exports";
 
 function NavbarHome() {
-  const [id, setId] = useState("");
-  let actualId = "";
+  const [id, setId] = useState<string>("");
+  let input_id = "";
 
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/">Linkedin</Navbar.Brand>
+        <Navbar.Brand href="/">Project name</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -29,19 +31,19 @@ function NavbarHome() {
                 placement="bottom"
                 overlay={
                   <Tooltip id="button-tooltip-2">
-                    Recherchez un utilisateur par son ID
+                    Search bar optional
                   </Tooltip>
                 }
                 children={
                   <InputGroup className="d-flex">
-                    <SearchHomepage id={id} />
+                    <Button variant="outline-secondary"><FontAwesomeIcon icon={faSearch} style={{color: 'black'}}/></Button>
                     <FormControl
                       placeholder="Recherche ..."
                       aria-label="Username"
                       aria-describedby="basic-addon1"
                       value={id}
                       onChange={(e) => {
-                        actualId = e.target.value;
+                        input_id = e.target.value;
                         setId(e.target.value);
                       }}
                     />
@@ -61,15 +63,7 @@ function NavbarHome() {
 function Body() {
   return (
     <>
-      <div className="homepage__left">
-        <h2>Bienvenue dans votre communauté professionnelle !</h2>
-      </div>
-      <div className="homepage__right">
-        <img
-          alt=""
-          src="https://img.freepik.com/free-vector/office-employee-sits-desktop-front-computer-monitor-clerk-accountant_165429-1104.jpg?size=626&ext=jpg"
-        ></img>
-      </div>
+      
     </>
   );
 }

@@ -1,3 +1,5 @@
+@import "bootstrap/dist/css/bootstrap.css";
+
 .App {
   text-align: center;
 }
@@ -65,20 +67,6 @@ body {
   align-items: center;
 }
 
-/* Homepage */
-
-.homepage__right {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.homepage__left {
-  position: absolute;
-  top: 30%;
-  left: 5%;
-}
-
 /* Navbar */
 
 .nav__searchBar {
@@ -91,79 +79,4 @@ body {
 
 .nav__users {
   margin-right: 5px;
-}
-
-/* Profile */
-
-.profile__infos {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: white;
-  width: calc(55%) !important;
-  border-radius: 10px;
-  border-color: lightgrey;
-  border-style: outset;
-}
-
-.profile__competences {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: white;
-  width: calc(55%) !important;
-  border-radius: 10px;
-  border-color: lightgrey;
-  border-style: outset;
-}
-
-.profile__experiences {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: white;
-  width: calc(55%) !important;
-  border-radius: 10px;
-  border-color: lightgrey;
-  border-style: outset;
-}
-
-.profile__infos__content {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-/* Search */
-
-.search__infos {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: white;
-  width: calc(55%) !important;
-  border-radius: 10px;
-  border-color: lightgrey;
-  border-style: outset;
-}
-
-.search__infos__content {
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.search__result {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-/* Companies */
-
-.companies__my {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: white;
-  width: calc(55%) !important;
-  border-radius: 10px;
-  border-color: lightgrey;
-  border-style: outset;
 }

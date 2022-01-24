@@ -1,19 +1,18 @@
+import React, { Component, useState }  from 'react';
 import "../../App.css";
-import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Modal, Button, Form, OverlayTrigger, Tooltip } from "react-bootstrap";
-import { useState } from "react";
 
-import { User } from "../../helper/types";
+import { UserResponse } from "../../helper/types";
 import { signup } from "../exports";
 
 function ShowSignup() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState<boolean>(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [actualEmail, setEmail] = useState("");
-  const [actualPasswd, setPasswd] = useState("");
-  const input_user: User = { email: "", password: "", userId: "" };
+  const [actualEmail, setEmail] = useState<string>("");
+  const [actualPasswd, setPasswd] = useState<string>("");
+  const input_user: UserResponse = { id: "", email: "", password: "" };
 
   return (
     <>
@@ -79,7 +78,7 @@ function ShowSignup() {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <a style={{ opacity: 0.8 }}>Linkedin Entreprise</a>
+          <a style={{ opacity: 0.8 }}>*Project Name* Entreprise</a>
         </Modal.Footer>
       </Modal>
     </>
