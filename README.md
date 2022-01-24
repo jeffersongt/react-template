@@ -1,11 +1,9 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 # Table of contents
 
-- [Linkedin](#linkedin)
+- [Template](#template)
 - [Usage](#usage)
-- [API](#api)
 - [Technologies](#technologies)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
