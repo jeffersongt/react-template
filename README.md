@@ -21,11 +21,6 @@ To launch the template locally :
 `npm install`
 `npm run start`
 
-To launch the template in a container :
-
-`npm install`
-`npm run container`
-
 # Technologies
 
 - [Typescript](https://www.typescriptlang.org/)
@@ -34,4 +29,3 @@ To launch the template in a container :
 - [Prettier (formatting)](https://prettier.io/)
 - [Husky (pre-commit hooks)](https://typicode.github.io/husky/#/)
 - [Github action (CI/CD)](https://github.com/features/actions)
-- [Docker](https://www.docker.com/)

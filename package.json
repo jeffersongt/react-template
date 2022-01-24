@@ -29,7 +29,6 @@
   },
   "scripts": {
     "start": "export NODE_OPTIONS=--openssl-legacy-provider ; react-scripts start",
-    "container": "docker-compose up --build",
     "format": "prettier --write .",
     "lint": "eslint . --ext ts --ext tsx --ext js --fix",
     "lint:ci": "eslint . --ext ts --ext tsx --ext js",
