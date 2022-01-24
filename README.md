@@ -14,9 +14,11 @@
 
 This is a frontend react typescript template ready to use.
 
+New features coming soon ...
+
 # Usage
 
-To launch the template locally :
+To launch the template :
 
 `npm install`
 `npm run start`
