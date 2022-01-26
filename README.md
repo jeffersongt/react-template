@@ -21,6 +21,10 @@ To launch the template :
 `npm install`
 `npm run start`
 
+If it fails :
+
+remove this part in the line "start" from package.json : 'export NODE_OPTIONS=--openssl-legacy-provider ; '
+
 # Technologies
 
 - [Typescript](https://www.typescriptlang.org/)
