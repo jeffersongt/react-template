@@ -23,7 +23,7 @@ To launch the template :
 
 If it fails :
 
-remove this part in the line "start" from package.json : 'export NODE_OPTIONS=--openssl-legacy-provider ; '
+remove this part in the line "start" from package.json : `export NODE_OPTIONS=--openssl-legacy-provider ; `
 
 # Technologies
 
