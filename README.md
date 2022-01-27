@@ -18,16 +18,16 @@ New features coming soon : Linter/Prettier/Husky/Jest ...
 
 # Usage
 
-To launch the template locally :
+- To launch the template locally :
 
 `npm install`
 `npm run start`
 
-If it fails :
+- If it fails :
 
 remove this part in the line "start" from package.json : `export NODE_OPTIONS=--openssl-legacy-provider ; `
 
-To launch the template in a docker container :
+- To launch the template in a docker container :
 
 `docker-compose up --build`
 
