@@ -1,11 +1,11 @@
-import React, { Component, useState }  from 'react';
+import { useState }  from 'react';
 import "../../App.css";
 import { Modal, Button, Form, OverlayTrigger, Tooltip } from "react-bootstrap";
 
-import { UserResponse } from "../../helper/types";
-import { signup } from "../exports";
+import { UserResponse, User } from "../../helper/types";
+import { signup } from "..";
 
-function ShowSignup() {
+export function ShowSignup() {
   const [show, setShow] = useState<boolean>(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -17,12 +17,12 @@ function ShowSignup() {
   return (
     <>
       <Button variant="light" className="signupButton" onClick={handleShow}>
-        Inscription
+        Signup
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Inscription</Modal.Title>
+          <Modal.Title>Signup</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
@@ -43,12 +43,12 @@ function ShowSignup() {
               placement="bottom"
               overlay={
                 <Tooltip id="button-tooltip-2">
-                  Le mot de passe doit comporter minimum 8 caractères
+                  Password should contain at least 8 characters
                 </Tooltip>
               }
               children={
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                  <Form.Label>Mot de passe</Form.Label>
+                  <Form.Label>Password</Form.Label>
                   <Form.Control
                     type="password"
                     placeholder="********"
@@ -65,7 +65,8 @@ function ShowSignup() {
             <Button
               variant="primary"
               onClick={async () => {
-                const result = await signup(actualEmail, actualPasswd);
+                const params : User = { email : actualEmail, password : actualPasswd };
+                const result = await signup(params);
                 if (result === true) {
                   handleClose();
                   setEmail("");
@@ -73,16 +74,14 @@ function ShowSignup() {
                 }
               }}
             >
-              S'inscrire
+              Signup
             </Button>
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <a style={{ opacity: 0.8 }}>*Project Name* Entreprise</a>
+          <a style={{ opacity: 0.8 }}>*Project Name* Enterprise</a>
         </Modal.Footer>
       </Modal>
     </>
   );
 }
-
-export { ShowSignup };

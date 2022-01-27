@@ -1,4 +1,4 @@
-import React, { Component, useState }  from 'react';
+import { useState }  from 'react';
 import "../../App.css";
 import {
   Container,
@@ -13,9 +13,9 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
-import { ShowLogin, ShowSignup } from "../exports";
+import { ShowLogin, ShowSignup } from "..";
 
-function NavbarHome() {
+export function NavbarHome() {
   const [id, setId] = useState<string>("");
   let input_id = "";
 
@@ -60,12 +60,10 @@ function NavbarHome() {
   );
 }
 
-function Body() {
+export function Body() {
   return (
     <>
       
     </>
   );
 }
-
-export { NavbarHome, Body };

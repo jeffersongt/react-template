@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  client:
+    networks:
+      - frontend
+    build:
+        context: ./
+    command: npm start
+    volumes:
+      - ./:/usr/app
+      - /usr/app/node_modules
+    ports:
+      - "${CLIENT_PORT}:${CLIENT_PORT}"
+
+networks:
+  frontend:

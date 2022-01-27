@@ -1,13 +1,12 @@
-import React, { Component }  from 'react';
 import "../../App.css";
 import { Modal, Button, Form } from "react-bootstrap";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 
-import { UserResponse } from "../../helper/types";
-import { signin } from "../exports";
+import { UserResponse, User } from "../../helper/types";
+import { signin } from "..";
 
-function ShowLogin() {
+export function ShowLogin() {
   const navigate = useNavigate();
 
   const [show, setShow] = useState<boolean>(false);
@@ -25,12 +24,12 @@ function ShowLogin() {
         className="loginButton"
         onClick={handleShow}
       >
-        Connexion
+        Signin
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Connexion</Modal.Title>
+          <Modal.Title>Signin</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
@@ -49,7 +48,7 @@ function ShowLogin() {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Mot de passe</Form.Label>
+              <Form.Label>Password</Form.Label>
               <Form.Control
                 type="password"
                 placeholder="********"
@@ -64,7 +63,8 @@ function ShowLogin() {
             <Button
               variant="primary"
               onClick={async () => {
-                const result = await signin(actualEmail, actualPasswd);
+                const params : User = { email : actualEmail, password : actualPasswd };
+                const result = await signin(params);
                 if (result !== "") {
                   handleClose();
                   setEmail("");
@@ -73,16 +73,14 @@ function ShowLogin() {
                 }
               }}
             >
-              Se connecter
+              Signin
             </Button>
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <a style={{ opacity: 0.8 }}>*Project Name* Entreprise</a>
+          <a style={{ opacity: 0.8 }}>*Project Name* Enterprise</a>
         </Modal.Footer>
       </Modal>
     </>
   );
 }
-
-export { ShowLogin };

@@ -1,12 +1,9 @@
-import React, { Component }  from 'react';
 import "../App.css";
 
-function NavbarLogged() {
+export default function NavbarLogged() {
   return (
     <>
 
     </>
   );
 }
-
-export default NavbarLogged;

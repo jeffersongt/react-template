@@ -11,12 +11,14 @@
 # Template
 
 This is a frontend react typescript template ready to use.
+It includes CI with github actions, a dockerfile and docker-compose implementation fully functional
+to add directly to your own compose file.
 
-New features coming soon ...
+New features coming soon : Linter/Prettier/Husky/Jest ...
 
 # Usage
 
-To launch the template :
+To launch the template locally :
 
 `npm install`
 `npm run start`
@@ -24,6 +26,10 @@ To launch the template :
 If it fails :
 
 remove this part in the line "start" from package.json : `export NODE_OPTIONS=--openssl-legacy-provider ; `
+
+To launch the template in a docker container :
+
+`docker-compose up --build`
 
 # Technologies
 
