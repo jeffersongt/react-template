@@ -13,7 +13,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
-import { ShowLogin, ShowSignup } from "..";
+import { Login, Signup } from "..";
 
 export function NavbarHome() {
   const [id, setId] = useState<string>("");
@@ -22,13 +22,12 @@ export function NavbarHome() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/">Project name</Navbar.Brand>
+        <Navbar.Brand href="/" className="principal__color" style={{fontWeight: "bold"}}>Project name</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <div className="nav__searchBar">
-              <OverlayTrigger
-                placement="bottom"
+              <OverlayTrigger placement="bottom"
                 overlay={
                   <Tooltip id="button-tooltip-2">
                     Search bar optional
@@ -36,7 +35,9 @@ export function NavbarHome() {
                 }
                 children={
                   <InputGroup className="d-flex">
-                    <Button variant="outline-secondary"><FontAwesomeIcon icon={faSearch} style={{color: 'black'}}/></Button>
+                    <Button variant="outline-secondary" className="secondary__cancel__btn__color">
+                      <FontAwesomeIcon icon={faSearch} className="secondary__color"/>
+                    </Button>
                     <FormControl
                       placeholder="Recherche ..."
                       aria-label="Username"
@@ -52,8 +53,8 @@ export function NavbarHome() {
               ></OverlayTrigger>
             </div>
           </Nav>
-          <ShowSignup />
-          <ShowLogin />
+            <Signup />
+            <Login />
         </Navbar.Collapse>
       </Container>
     </Navbar>

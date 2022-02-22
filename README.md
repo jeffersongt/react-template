@@ -11,10 +11,14 @@
 # Template
 
 This is a frontend react typescript template ready to use.
-It includes CI with github actions, a dockerfile and docker-compose implementation fully functional
-to add directly to your own compose file.
 
-New features coming soon : Linter/Prettier/Husky/Jest ...
+A dockerfile and docker-compose implementation is provided.
+
+A Linter is also included ([Eslint](https://eslint.org/)).
+
+There are Github Actions CI handling : Docker build, Linter, Readme table of contents updates.
+
+New features coming soon : Jest ...
 
 # Usage
 
@@ -25,7 +29,8 @@ New features coming soon : Linter/Prettier/Husky/Jest ...
 
 - If it fails :
 
-remove this part in the line "start" from package.json : `export NODE_OPTIONS=--openssl-legacy-provider ; `
+remove this part in the line "start" from package.json :
+`export NODE_OPTIONS=--openssl-legacy-provider ; `
 
 - To launch the template in a docker container :
 
@@ -36,6 +41,4 @@ remove this part in the line "start" from package.json : `export NODE_OPTIONS=--
 - [Typescript](https://www.typescriptlang.org/)
 - [Jest (testing)](https://jestjs.io/)
 - [Eslint (styling)](https://eslint.org/)
-- [Prettier (formatting)](https://prettier.io/)
-- [Husky (pre-commit hooks)](https://typicode.github.io/husky/#/)
 - [Github action (CI/CD)](https://github.com/features/actions)

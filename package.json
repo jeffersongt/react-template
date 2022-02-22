@@ -32,14 +32,36 @@
   },
   "scripts": {
     "start": "export NODE_OPTIONS=--openssl-legacy-provider ; react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "lint": "eslint src/**/*.ts",
+    "lint:format": "eslint --fix src/**/*.ts"
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.3.2",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.28.0",
     "immer": ">=9.0.6",
     "node-forge": ">=1.0.0",
     "postcss": ">=8.2.13",
     "prettier": "2.5.1",
     "validator": "^13.7.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

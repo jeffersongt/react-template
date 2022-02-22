@@ -3,7 +3,7 @@ import { NavbarHome, Body } from "./routes";
 
 function App() {
   return (
-    <div>
+    <div className="body__style">
       <NavbarHome />
       <Body />
     </div>

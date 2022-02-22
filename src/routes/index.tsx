@@ -1,6 +1,6 @@
 import { NavbarHome, Body } from "./home/homepage";
-import { ShowLogin } from "./home/login";
-import { ShowSignup } from "./home/signup";
+import { Login } from "./home/login";
+import { Signup } from "./home/signup";
 import NavbarLogged from "../components/navbar_logged";
 import {
   signup,
@@ -12,8 +12,8 @@ import {
 export {
   NavbarHome,
   Body,
-  ShowLogin,
-  ShowSignup,
+  Login,
+  Signup,
   NavbarLogged,
   signup,
   signin,

@@ -1,44 +1,36 @@
-import axios from "axios";
+import axios from 'axios'
 
-import { User } from './types';
+import { User } from './types'
 
-// axios defaults
+/* Axios defaults */
 
 axios.defaults.withCredentials = true;
-const url = "http://localhost:8000";
+const url = 'http://localhost:8000';
 
-function getError(error : any) {
+function getError (error : any) {
   if (error.response) {
     console.log(error.response.data.error.message);
     console.log(error.response.status);
     console.log(error.response.headers);
-    alert(
-      "An error " +
-        error.response.status +
-        " occured : " +
-        error.response.data.error.message
-    );
+    alert('An error ' + error.response.status + ' occured : ' + error.response.data.error.message);
   }
 }
 
-// user management
+/* User management */
 
-export async function signup(parameters : User) {
+export async function signup (parameters : User) {
   const params : User = {
     email: parameters.email,
     password: parameters.password,
+    username: parameters.username
   };
   let signup = false;
 
   await axios
-    .post(url + "/users/signup", params)
+    .post(url + '/users/signup', params)
     .then((res) => {
       console.log(res);
-      alert(
-        "You signed up successfully with email " +
-          res.data.email +
-          ". Please signin."
-      );
+      alert('You signed up successfully with email ' + res.data.email + '. Please signin.');
       signup = true;
     })
     .catch((error) => {
@@ -47,19 +39,20 @@ export async function signup(parameters : User) {
   return signup;
 }
 
-export async function signin(parameters : User) {
+export async function signin (parameters : User) {
   const params : User = {
     email: parameters.email,
     password: parameters.password,
+    username: parameters.username
   };
-  let id = "";
+  let id = '';
 
   await axios
-    .post(url + "/users/signin", params)
+    .post(url + '/users/signin', params)
     .then((res) => {
       console.log(res);
       id = res.data.id;
-      alert("Signin completed. Welcome back " + res.data.email + ".");
+      alert('Signin completed. Welcome back ' + res.data.email + '.');
     })
     .catch((error) => {
       getError(error);
@@ -67,12 +60,12 @@ export async function signin(parameters : User) {
   return id;
 }
 
-export async function signout() {
+export async function signout () {
   await axios
-    .post(url + "/users/me/signout")
+    .post(url + '/users/me/signout')
     .then((res) => {
       console.log(res);
-      alert("Signout completed.");
+      alert('Signout completed.');
     })
     .catch((error) => {
       getError(error);
@@ -80,12 +73,12 @@ export async function signout() {
   return 0;
 }
 
-export async function deleteAccount() {
+export async function deleteAccount () {
   await axios
-    .delete(url + "/users/me")
+    .delete(url + '/users/me')
     .then((res) => {
       console.log(res);
-      alert("Your account has been deleted.");
+      alert('Your account has been deleted.');
     })
     .catch((error) => {
       getError(error);
