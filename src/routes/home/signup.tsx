@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../../App.css';
-import { Modal, Button, Form, OverlayTrigger, Tooltip, FloatingLabel } from 'react-bootstrap';
+import { Modal, Button, Form, FloatingLabel } from 'react-bootstrap';
 
 import { UserResponse, User } from '../../helper/types';
 import { signup } from '..';
