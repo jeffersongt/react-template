@@ -66,6 +66,7 @@ It handles :
 - Readme table of contents update.
 
 Dependabot is also used in this template to automatically merge with the most recent dependencies.
+To enable mergify bot to apply on your repository please follow the instructions here on [Mergify](https://docs.mergify.com/getting-started/).
 
 # Code documentation
 
@@ -77,3 +78,4 @@ Coming soon.
 - [Eslint (styling)](https://eslint.org/)
 - [Docker](https://www.docker.com/)
 - [Github action (CI/CD)](https://github.com/features/actions)
+- [Mergify](https://docs.mergify.com/getting-started/)

@@ -31,7 +31,6 @@
   },
   "scripts": {
     "dev": "export NODE_OPTIONS=--openssl-legacy-provider ; react-scripts start",
-    "test": "react-scripts test",
     "build": "react-scripts build",
     "lint": "eslint src/**/*.ts",
     "lint:format": "eslint --fix src/**/*.ts"
