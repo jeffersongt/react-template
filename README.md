@@ -2,8 +2,13 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 # Table of contents
 
-- [Template](#template)
+- [React-typescript-template](#react-typescript-template)
 - [Usage](#usage)
+- [Build](#build)
+- [Docker](#docker)
+- [Linter](#linter)
+- [Continuous integration](#continuous-integration)
+- [Code documentation](#code-documentation)
 - [Technologies](#technologies)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
