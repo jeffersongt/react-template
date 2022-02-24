@@ -8,37 +8,67 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Template
+# React-typescript-template
 
 This is a frontend react typescript template ready to use.
 
-A dockerfile and docker-compose implementation is provided.
-
-A Linter is also included ([Eslint](https://eslint.org/)).
-
-There are Github Actions CI handling : Docker build, Linter, Readme table of contents updates.
-
-New features coming soon : Jest ...
-
 # Usage
 
-- To launch the template locally :
+- To launch the template in development mode :
 
 `npm install`
-`npm run start`
 
-- If it fails :
+`npm run dev`
 
-remove this part in the line "start" from package.json :
-`export NODE_OPTIONS=--openssl-legacy-provider ; `
+# Build
+
+- To build a production ready package :
+
+`npm run build`
+
+# Docker
+
+A dockerfile and docker-compose implementation is provided.
 
 - To launch the template in a docker container :
 
 `docker-compose up --build`
 
+# Linter
+
+A Linter is also included [Eslint](https://eslint.org/).
+
+- To use it :
+
+`npm run lint`
+
+- To automatically fix all the warnings :
+
+`npm run lint:format`
+
+You can also add your own rules in the file `.eslintrc.js` in the `rules` part.
+
+# Continuous integration
+
+This template provides Github Actions CI.
+
+It handles :
+
+- Docker build
+
+- Linter
+
+- Readme table of contents update.
+
+Dependabot is also used in this template to automatically merge with the most recent dependencies.
+
+# Code documentation
+
+Coming soon.
+
 # Technologies
 
 - [Typescript](https://www.typescriptlang.org/)
-- [Jest (testing)](https://jestjs.io/)
 - [Eslint (styling)](https://eslint.org/)
+- [Docker](https://www.docker.com/)
 - [Github action (CI/CD)](https://github.com/features/actions)

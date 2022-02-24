@@ -2,7 +2,8 @@ pull_request_rules:
   - name: Automated dependabot merge
     conditions:
       - author~=^dependabot(|-preview)\[bot\]$
-      - status-success=lint
+      - status-success=Lint
+      - status-success=Docker
     actions:
       merge:
         method: merge
