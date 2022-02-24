@@ -35,6 +35,14 @@ And don't hesitate to check the already installed packages in `package.json`.
 
 `npm run build`
 
+- Once built you can view locally a preview of your production build :
+
+`npm run serve`
+
+# Vite
+
+This template uses [Vite](https://vitejs.dev/) instead of create-react-app as it is providing a faster and leaner development experience, Typescript speed is increased by 20 times compared to webpack or others, and it provides a build command pre-configured to output highly optimized static assets for production.
+
 # Docker
 
 A dockerfile and docker-compose implementation is provided.
@@ -101,5 +109,6 @@ Enjoy :)
 - [Typescript](https://www.typescriptlang.org/)
 - [Eslint (styling)](https://eslint.org/)
 - [Docker](https://www.docker.com/)
+- [Vite](https://vitejs.dev/)
 - [Github action (CI/CD)](https://github.com/features/actions)
 - [Mergify](https://docs.mergify.com/getting-started/)
