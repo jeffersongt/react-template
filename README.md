@@ -5,6 +5,7 @@
 - [React-typescript-template](#react-typescript-template)
 - [Usage](#usage)
 - [Build](#build)
+- [Vite](#vite)
 - [Docker](#docker)
 - [Linter](#linter)
 - [Continuous integration](#continuous-integration)
