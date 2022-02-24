@@ -6,7 +6,7 @@ services:
       - frontend
     build:
         context: ./
-    command: npm start
+    command: npm run dev
     volumes:
       - ./:/usr/app
       - /usr/app/node_modules
