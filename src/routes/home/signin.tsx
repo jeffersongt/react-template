@@ -1,9 +1,8 @@
-import React, { Component }  from 'react';
-import '../../App.css';
+import React, { useState } from 'react';
 import { Modal, Button, Form, FloatingLabel } from 'react-bootstrap';
-import { useState } from 'react';
 import { useNavigate } from 'react-router';
 
+import '../../App.css';
 import { UserResponse, User } from '../../helper/types';
 import { signin } from '..';
 

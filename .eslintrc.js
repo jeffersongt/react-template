@@ -26,7 +26,8 @@ module.exports = {
     'semi': 0,
     'space-before-function-paren': 0,
     'no-unused-vars': 1,
-    'react/no-children-prop': 1
+    'react/no-children-prop': 0,
+    'no-use-before-define': 0
   },
   settings: {
     react: {

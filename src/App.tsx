@@ -1,6 +1,7 @@
-import React, { Component }  from 'react';
-import './App.css';
+import React from 'react';
 import { NavbarHome, Body } from './routes';
+
+import './App.css';
 
 function App() {
   return (

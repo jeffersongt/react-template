@@ -1,6 +1,4 @@
-import React, { Component }  from 'react';
-import { useState } from 'react';
-import '../../App.css';
+import React, { useState } from 'react';
 import {
   Container,
   OverlayTrigger,
@@ -14,6 +12,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
+import '../../App.css';
 import { Signin, Signup } from '..';
 
 export function NavbarHome() {
