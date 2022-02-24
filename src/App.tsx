@@ -1,5 +1,5 @@
-import "./App.css";
-import { NavbarHome, Body } from "./routes";
+import './App.css';
+import { NavbarHome, Body } from './routes';
 
 function App() {
   return (

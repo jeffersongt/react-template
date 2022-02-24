@@ -17,6 +17,10 @@
 
 This is a frontend react typescript template ready to use.
 
+It contains lot of tools already set as describe below.
+
+And don't hesitate to check the already installed packages in `package.json`.
+
 # Usage
 
 - To launch the template in development mode :
@@ -70,7 +74,27 @@ To enable mergify bot to apply on your repository please follow the instructions
 
 # Code documentation
 
-Coming soon.
+Go to `src` folder.
+
+- `components` folder is for any generic component that is reusable in your code
+
+- `helper` contains :
+
+    - `types.ts` file for your interfaces
+    
+    - `api.ts` for all your api calls, it already contains a CRUD for the user management, go check :)
+
+- `routes` is for all your routes :
+    
+    - you'll find at the root the entrypoint `index.tsx` where you define your paths
+
+    - still at the root `App.css` for your style ( there are already lot of your needs go check ;) )
+
+    - in the `home` folder you already have a homepage with a navbar and signup, signin buttons with the forms sent to the api
+
+Now, simply add your routes in the `routes` folder, apply your styles in `App.css`, create your paths in `index.tsx`
+
+Enjoy :)
 
 # Technologies
 

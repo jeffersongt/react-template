@@ -18,7 +18,7 @@ function getError (error : any) {
 
 /* User management */
 
-export async function signup (parameters : User) {
+export async function signup(parameters : User) {
   const params : User = {
     email: parameters.email,
     password: parameters.password,
@@ -39,7 +39,7 @@ export async function signup (parameters : User) {
   return signup;
 }
 
-export async function signin (parameters : User) {
+export async function signin(parameters : User) {
   const params : User = {
     email: parameters.email,
     password: parameters.password,
@@ -60,7 +60,7 @@ export async function signin (parameters : User) {
   return id;
 }
 
-export async function signout () {
+export async function signout() {
   await axios
     .post(url + '/users/me/signout')
     .then((res) => {
@@ -73,7 +73,7 @@ export async function signout () {
   return 0;
 }
 
-export async function deleteAccount () {
+export async function deleteAccount() {
   await axios
     .delete(url + '/users/me')
     .then((res) => {

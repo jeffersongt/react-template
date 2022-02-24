@@ -20,14 +20,18 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
-    'react/jsx-uses-react': 'error',
-    'react/jsx-uses-vars': 'error',
-    'semi': 'off'
+    'react/jsx-uses-react': 2,
+    'react/jsx-uses-vars': 2,
+    'react/react-in-jsx-scope': 0,
+    'semi': 0,
+    'space-before-function-paren': 0,
+    'no-unused-vars': 1,
+    'react/no-children-prop': 1
   },
   settings: {
     react: {
       pragma: 'React',
-      version: '16.8.6'
+      version: 'detect'
     }
   }
 }

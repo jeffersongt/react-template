@@ -1,5 +1,5 @@
-import { useState }  from 'react';
-import "../../App.css";
+import { useState } from 'react';
+import '../../App.css';
 import {
   Container,
   OverlayTrigger,
@@ -9,20 +9,20 @@ import {
   Nav,
   Navbar,
   Button
-} from "react-bootstrap";
+} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
-import { Login, Signup } from "..";
+import { Signin, Signup } from '..';
 
 export function NavbarHome() {
-  const [id, setId] = useState<string>("");
-  let input_id = "";
+  const [id, setId] = useState<string>('');
+  let inputId = '';
 
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/" className="principal__color" style={{fontWeight: "bold"}}>Project name</Navbar.Brand>
+        <Navbar.Brand href="/" className="principal__color" style={{ fontWeight: 'bold' }}>Project name</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -44,7 +44,7 @@ export function NavbarHome() {
                       aria-describedby="basic-addon1"
                       value={id}
                       onChange={(e) => {
-                        input_id = e.target.value;
+                        inputId = e.target.value;
                         setId(e.target.value);
                       }}
                     />
@@ -54,7 +54,7 @@ export function NavbarHome() {
             </div>
           </Nav>
             <Signup />
-            <Login />
+            <Signin />
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -64,7 +64,7 @@ export function NavbarHome() {
 export function Body() {
   return (
     <>
-      
+
     </>
   );
 }

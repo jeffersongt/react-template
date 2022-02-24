@@ -32,8 +32,8 @@
   "scripts": {
     "dev": "export NODE_OPTIONS=--openssl-legacy-provider ; react-scripts start",
     "build": "react-scripts build",
-    "lint": "eslint src/**/*.ts",
-    "lint:format": "eslint --fix src/**/*.ts"
+    "lint": "eslint . --ext ts --ext tsx",
+    "lint:format": "eslint . --ext ts --ext tsx --fix"
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.3.2",
