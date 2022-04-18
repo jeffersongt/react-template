@@ -7,7 +7,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
-    "@testing-library/react": "^13.0.0",
+    "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^14.0.4",
     "@types/node": "^17.0.24",
     "@types/react": "^18.0.1",
