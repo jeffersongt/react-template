@@ -1,14 +1,10 @@
 import React from 'react';
-import { NavbarHome, Body } from './routes';
-
 import './App.css';
+import SignIn from './routes/User/SignIn';
 
 function App() {
   return (
-    <div className="body__style">
-      <NavbarHome />
-      <Body />
-    </div>
+    <SignIn/>
   );
 }
 

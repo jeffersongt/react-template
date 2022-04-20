@@ -1,7 +1,7 @@
-@import "bootstrap/dist/css/bootstrap.css";
+/* Utilities */
 
 .body__style {
-  background: url("https://coolbackgrounds.io/images/backgrounds/index/aqua-d9b59c89.png") no-repeat center center fixed; 
+  background: url("https://coolbackgrounds.io/images/backgrounds/index/aqua-d9b59c89.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -87,18 +87,4 @@
 
 .secondary__cancel__btn__color:hover {
   color: #FE9455;
-}
-
-/* Navbar */
-
-.nav__searchBar {
-  width: fit-content;
-}
-
-.nav__companies {
-  margin-right: 5px;
-}
-
-.nav__users {
-  margin-right: 5px;
 }

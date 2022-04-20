@@ -9,4 +9,4 @@ RUN npm install --no-optional
 COPY . ./
 
 EXPOSE $CLIENT_PORT
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "container"]

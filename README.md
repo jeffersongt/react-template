@@ -16,7 +16,7 @@
 
 # React-typescript-template
 
-This is a frontend react typescript template ready to use.
+This is a frontend react typescript template ready to use with [MaterialUI](https://mui.com/)
 
 It contains lot of tools already set as describe below.
 
@@ -26,19 +26,19 @@ And don't hesitate to check the already installed packages in `package.json`.
 
 - To launch the template in development mode :
 
-`npm install`
+`yarn`
 
-`npm run dev`
+`yarn run dev`
 
 # Build
 
 - To build a production ready package :
 
-`npm run build`
+`yarn run build`
 
 - Once built you can view locally a preview of your production build :
 
-`npm run serve`
+`yarn run serve`
 
 # Vite
 
@@ -58,11 +58,11 @@ A Linter is also included [Eslint](https://eslint.org/).
 
 - To use it :
 
-`npm run lint`
+`yarn run lint`
 
 - To automatically fix all the warnings :
 
-`npm run lint:format`
+`yarn run lint:format`
 
 You can also add your own rules in the file `.eslintrc.js` in the `rules` part.
 
@@ -90,18 +90,22 @@ Go to `src` folder.
 - `helper` contains :
 
     - `types.ts` file for your interfaces
-    
-    - `api.ts` for all your api calls, it already contains a CRUD for the user management, go check :)
+
+    - `utilities.ts` for any utility function
+
+- `api` contains :
+
+    - add your files for your your API calls, it already contains a CRUD for the user management, go check :)
 
 - `routes` is for all your routes :
-    
+
     - you'll find at the root the entrypoint `index.tsx` where you define your paths
 
-    - still at the root `App.css` for your style ( there are already lot of your needs go check ;) )
+    - still at the root `App.css` for your style
 
-    - in the `home` folder you already have a homepage with a navbar and signup, signin buttons with the forms sent to the api
+    - in the `User` folder you already have signin, signup, password reset pages with their API call linked
 
-Now, simply add your routes in the `routes` folder, apply your styles in `App.css`, create your paths in `index.tsx`
+Now, simply add your folder/routes in the `routes` folder, apply your styles in `App.css` if you need and create your paths in `index.tsx`
 
 Enjoy :)
 

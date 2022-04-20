@@ -1,20 +1,15 @@
-import { NavbarHome, Body } from './home/homepage';
-import { Signin } from './home/signin';
-import { Signup } from './home/signup';
-import NavbarLogged from '../components/navbar_logged';
+import SignIn from './User/SignIn';
+import SignUp from './User/SignUp';
 import {
   signup,
   signin,
   signout,
   deleteAccount
-} from '../helper/api';
+} from '../api/UserApi';
 
 export {
-  NavbarHome,
-  Body,
-  Signin,
-  Signup,
-  NavbarLogged,
+  SignIn,
+  SignUp,
   signup,
   signin,
   signout,
