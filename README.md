@@ -42,7 +42,7 @@ And don't hesitate to check the already installed packages in `package.json`.
 
 # Vite
 
-This template uses [Vite](https://vitejs.dev/) instead of create-react-app as it is providing a faster and leaner development experience, Typescript speed is increased by 20 times compared to webpack or others, and it provides a build command pre-configured to output highly optimized static assets for production.
+This template uses [Vite](https://vitejs.dev/) instead of react-scripts as it is providing a faster and leaner development experience, Typescript speed is increased by 20 times compared to webpack or others, and it provides a build command pre-configured to output highly optimized static assets for production.
 
 # Docker
 
