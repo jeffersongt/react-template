@@ -2,7 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 # Table of contents
 
-- [React-typescript-template](#react-typescript-template)
+- [React-template](#react-template)
 - [Usage](#usage)
 - [Build](#build)
 - [Vite](#vite)
