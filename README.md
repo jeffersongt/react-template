@@ -14,7 +14,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# React-typescript-template
+# React-template
 
 This is a frontend react typescript template ready to use with [MaterialUI](https://mui.com/)
 
